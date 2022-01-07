@@ -26,8 +26,9 @@
   This is the back-end for an internet retail site.
   
   <br>
-  Repo: (https://github.com/sihayah/ecommerce)
-  Demo: ...
+  Repo: https://github.com/sihayah/ecommerce
+  <br>
+  Demo: https://www.youtube.com/watch?v=ML2PZR83n_c
 
   <br>
 
