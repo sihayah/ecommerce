@@ -18,8 +18,8 @@ router.get('/', (req, res) => {
       }
     ]
   })
-  .then(response => {
-    res.json(response);
+  .then(category => {
+    res.json(category);
     console.log('showing all categoriess')
   })
   .catch(err => {
@@ -45,8 +45,8 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-  .then(response => {
-    res.json(response);
+  .then(category => {
+    res.json(category);
     console.log('showing all categoriess')
   })
   .catch(err => {
@@ -56,6 +56,15 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
+  Category.create({
+    category_name: req.body.category_name
+  })
+    .then(category => {
+      res.json(category)
+    })
+    .catch(err => {
+      console.log(err)
+    })
 });
 
 router.put('/:id', (req, res) => {
