@@ -87,8 +87,8 @@ router.delete('/:id', (req, res) => {
       id: req.params.id      
     }
   })
-    .then(category => {
-      res.json(category)
+    .then(tag => {
+      res.json(tag)
     })
     .catch(err => {
       console.log(err)

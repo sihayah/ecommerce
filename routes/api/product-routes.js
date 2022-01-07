@@ -150,8 +150,8 @@ router.delete('/:id', (req, res) => {
       id: req.params.id      
     }
   })
-    .then(category => {
-      res.json(category)
+    .then(product => {
+      res.json(product)
     })
     .catch(err => {
       console.log(err)
